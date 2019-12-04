@@ -1,0 +1,24 @@
+{
+	"classtype": "kCode",
+	"omnisversion": "10.1",
+	"internalversion": 3,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"properties": {
+		"canremotedebugwhenlocked": false,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2019-12-04 15:31:32",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"moddate": "2019-12-04 15:36:58",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

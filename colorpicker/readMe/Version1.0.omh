@@ -1,0 +1,18 @@
+Begin text block
+Line:You can use the color picker in two ways:
+Line:
+Line:1. use it as a subform component or
+Line:2. use it as a subform set remote form
+Line:
+Line:There needs to be a public method $setColor in the main form that 
+Line:receives a parameter of type Integer (32bit) that is the color
+Line:chosen by the color picker. 
+Line:
+Line:The color picker uses $cinst.$container().$setColor() in order
+Line:to set the color in the underlying form. Works for subform as well
+Line:as a subform set.
+Line:
+Line:Have fun!
+Line:
+Line:Andreas
+End text block

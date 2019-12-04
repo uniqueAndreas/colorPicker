@@ -1,0 +1,35 @@
+Do iColorList.$addcols('red',kInteger,kShortint,,'green',kInteger,kShortint,,'blue',kInteger,kShortint,)
+
+
+For column from 1 to 13 step 1 ## which column is effected
+	For colorValue from 255 to 0 step -gap
+		Switch column
+			Case 1
+				Do iColorList.$add(colorValue,colorValue,colorValue)
+			Case 2
+				Do iColorList.$add(0,0,colorValue)
+			Case 3
+				Do iColorList.$add(0,colorValue,0)
+			Case 4
+				Do iColorList.$add(colorValue,colorValue,0)
+			Case 5
+				Do iColorList.$add(colorValue,0,0)
+			Case 6
+				Do iColorList.$add(colorValue,0,colorValue)
+			Case 7
+				Do iColorList.$add(0,colorValue,colorValue)
+			Case 8
+				Do iColorList.$add(colorValue,255,255)
+			Case 9
+				Do iColorList.$add(255,colorValue,255)
+			Case 10
+				Do iColorList.$add(colorValue,colorValue,255)
+			Case 11
+				Do iColorList.$add(255,255,colorValue)
+			Case 12
+				Do iColorList.$add(colorValue,255,colorValue)
+			Case 13
+				Do iColorList.$add(255,colorValue,colorValue)
+		End Switch
+	End For
+End For

@@ -1,0 +1,17 @@
+Set reference sourceField to $cinst.$objs.color1
+Do sourceField.$height.$assign(height)
+Do sourceField.$width.$assign(width)
+Do sourceField.$buttoncolor.$assign(rgb(iColorList.1.red,iColorList.1.green,iColorList.1.blue))
+For iColorList.$line from 2 to iColorList.$linecount step 1
+	Do $cinst.$objs.$add(con('color',iColorList.$line),sourceField) Returns newField
+	Calculate leftPos as leftPos+width
+	If mod(iColorList.$line-1,16)=0
+		Calculate leftPos as 0
+		Calculate top as top+height
+	End If
+	Do newField.$left.$assign(leftPos)
+	Do newField.$top.$assign(top)
+	Do newField.$height.$assign(height)
+	Do newField.$width.$assign(width)
+	Do newField.$buttoncolor.$assign(rgb(iColorList.red,iColorList.green,iColorList.blue))
+End For

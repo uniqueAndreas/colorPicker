@@ -1,0 +1,7 @@
+On evClick
+	Calculate iColorList.$line as mid($cobj().$name,6)
+	# Do $cinst.$showmessage(con('r=',iColorList.red,' - g=',iColorList.green,' - b=',iColorList.blue))
+	Calculate iColorText as con('rgb(',iColorList.red,',',iColorList.green,',',iColorList.blue,')')
+	If $cinst.$container().$setColor.$cando()
+		Do $cinst.$container().$setColor(rgb(iColorList.red,iColorList.green,iColorList.blue))
+	End If
